@@ -1,0 +1,20 @@
+{
+  "name": "beyond-visions-pa",
+  "description": "Beyond Visions Personal Assistant for Claude: inbox organisation, daily briefs, meeting prep and more, running on your own Claude account.",
+  "owner": {
+    "name": "Todor, Beyond Visions",
+    "email": "todor@beyondvisions.ai"
+  },
+  "metadata": {
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "beyond-pa",
+      "source": "./plugins/beyond-pa",
+      "description": "Your personal assistant: cleans and organises your inbox, sends a morning brief, prepares you for meetings, drafts replies in your voice and captures tasks and notes.",
+      "category": "productivity",
+      "tags": ["personal-assistant", "email", "calendar", "inbox", "productivity"]
+    }
+  ]
+}

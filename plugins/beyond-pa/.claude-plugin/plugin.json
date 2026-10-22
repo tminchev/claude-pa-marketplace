@@ -1,0 +1,12 @@
+{
+  "name": "beyond-pa",
+  "displayName": "Beyond Personal Assistant",
+  "version": "0.1.0",
+  "description": "Your personal assistant: cleans and organises your inbox, sends a morning brief, prepares you for meetings, drafts replies in your voice and captures tasks and notes. Works with Gmail and Google Calendar or Microsoft 365.",
+  "author": {
+    "name": "Todor, Beyond Visions",
+    "email": "todor@beyondvisions.ai"
+  },
+  "license": "UNLICENSED",
+  "keywords": ["personal-assistant", "email", "inbox", "calendar", "meetings", "productivity"]
+}
