@@ -8,6 +8,6 @@ A personal assistant for your Claude account. It learns how your inbox works and
 
 **Skills**: pa-setup, pa-inbox-organizer, pa-inbox-digest, pa-morning-brief, pa-inbox-triage, pa-meeting-prep, pa-draft-reply, pa-capture, pa-support, pa-request.
 
-**Your data** stays in a folder called Claude Assistant in your own Drive or OneDrive. The assistant never deletes mail, never marks spam, and never sends email to anyone but you unless you confirm it in the conversation.
+**Your data** stays in a folder called Claude Assistant in your own Drive or OneDrive. The assistant never deletes mail, never marks spam, and never sends email. Every reply it writes waits in your Drafts for you to send.
 
 **For maintainers:** the shared rules every skill follows live in `core/rules.md` and are injected into each skill by `scripts/sync-core.sh`; `scripts/check-skills.sh` is the gate. Edit the rules there, never inside a skill's generated block.

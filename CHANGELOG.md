@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.3
+
+- The assistant only writes drafts and never sends email, and it tells you so during setup. Requests to support are prepared as a draft for you to send.
+
+
 ## 0.3.2
 
 - Results arrive in the app only. The assistant never sends email on its own.
