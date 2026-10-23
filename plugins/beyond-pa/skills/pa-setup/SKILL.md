@@ -126,7 +126,7 @@ Then say, in one sentence: "If I ever get something wrong, tell me and I'll writ
 
 ## Part D: schedule it, then show the first brief
 
-1. For every routine switched on, propose the scheduled task **from this conversation**: say what it is called, how often it runs and at what time, and show the instructions, filled in from `assets/task-prompts.md` with every placeholder taken from `profile.md` and `preferences.md`. Then ask the person to confirm it; in Cowork they review the name, schedule and instructions and tap Schedule. One task at a time. No cron expressions, nothing to paste, nothing to open elsewhere.
+1. For every routine switched on, propose the scheduled task **from this conversation**: say what it is called, how often it runs and at what time, and show the instructions, filled in from `assets/task-prompts.md` with every placeholder taken from `profile.md` and `preferences.md`. Then ask the person to confirm it; in Cowork they review the name, schedule and instructions and tap Schedule. One task at a time. Nothing to paste, nothing to open elsewhere.
 
 2. If scheduling from the conversation is not available where you are running, say so once and give the fallback: open Cowork, choose Scheduled, New task, Create with Claude, and describe the routine in a sentence ("my morning brief at 7:07 on weekdays"); offer to repeat the instructions text for pasting only if they ask.
 

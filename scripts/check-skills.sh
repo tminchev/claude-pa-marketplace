@@ -6,7 +6,9 @@
 #   3. file <= 200 lines
 #   4. no em dash (U+2014) or en dash (U+2013)
 #   5. folder name starts with pa- and equals the name field (no collisions with built-in skills)
+#   6. no retired term survives in a skill body (the RETIRED list grows whenever a concept is removed)
 #   5. folder name starts with pa- and equals the name field (no collisions with built-in skills)
+#   6. no retired term survives in a skill body (the RETIRED list grows whenever a concept is removed)
 # Exit 1 on any failure. Run from anywhere.
 set -uo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -18,6 +20,7 @@ core = (plugin / "core" / "rules.md").read_text(encoding="utf-8").rstrip("\n")
 START = "<!-- core:start (generated from core/rules.md, do not edit here) -->"
 END = "<!-- core:end -->"
 fails = []
+RETIRED = ["delivery_email", "by email", "cron", "Code tab", "reply with a number", "/schedule"]
 
 def yaml_scalar(fm_text):
     """Return the description as a strict YAML parser would read it. Supports plain scalars,
@@ -81,6 +84,11 @@ def check_file(path, text):
         problems.append(f"{n} lines, over 200")
     if "—" in text or "–" in text:
         problems.append("contains an em or en dash")
+    # retired concepts: once removed from the design they must not survive anywhere in a skill
+    body = text.split(END, 1)[1] if END in text else text
+    for term in RETIRED:
+        if term.lower() in body.lower():
+            problems.append(f"retired term present: {term!r}")
     nm = re.search(r"^name:[ \t]*(.+)$", fmt, flags=re.M)
     folder = path.parent.name if hasattr(path, "parent") else None
     if nm and folder and nm.group(1).strip() != folder:
@@ -116,5 +124,5 @@ for name, fixture in controls.items():
 
 if fails:
     print("check-skills: FAIL"); [print("  " + f) for f in fails]; sys.exit(1)
-print(f"check-skills: OK ({len(list(plugin.glob('skills/*/SKILL.md')))} skills, 7 negative controls held)")
+print(f"check-skills: OK ({len(list(plugin.glob('skills/*/SKILL.md')))} skills, 8 negative controls held)")
 PY
