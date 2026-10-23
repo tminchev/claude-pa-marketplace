@@ -1,5 +1,9 @@
 # What's new
 
+## 0.1.2
+
+- Internal: checks that updates reach your account automatically.
+
 ## 0.1.1
 
 - Setup now starts reliably when you say "set up my personal assistant" in a normal chat.

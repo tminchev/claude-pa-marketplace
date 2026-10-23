@@ -5,6 +5,10 @@ description: Checks that the personal assistant is set up correctly and produces
 
 # Support check
 
+plugin_version: 0.1.2
+
+The line above is the version of the assistant that is running right now. Report it exactly; do not guess it from memory.
+
 Find out what is working and what is not, explain it in plain words, and give the person a report they can send to support without any back-and-forth.
 
 ## Ground rules
@@ -21,7 +25,7 @@ Run each, note pass or fail and a one-line detail. Do not stop at the first fail
 2. **Workspace**: the `Claude Assistant` folder exists; `profile.md`, `preferences.md`, `inbox-rules.md`, `tasks.md`, `people.md` exist; `profile.md` shows `setup_complete`, `plugin_version`, `workspace_writable`. If writable is unknown, attempt to append a single line to `journal/support-check.md` and record whether it worked.
 3. **Routines**: from `preferences.md`, which routines are enabled and their schedules. From `journal/`, the most recent `inbox-*.md` date, which tells you when the organizer last ran. If you are in a Claude Code session and `/schedule list` is available, list the scheduled tasks and compare; otherwise tell the person where to look (Claude app → Code → Scheduled, or claude.ai/code/routines) and ask what they see.
 4. **Inbox rules**: status approved or draft, rule count, VIP count, suggest mode on or off and its end date.
-5. **Plugin**: this plugin's version from the setup record in `profile.md`, and whether it matches the version you know yourself to be (state yours).
+5. **Plugin**: the `plugin_version` at the top of this skill is the version running now. Compare it with `plugin_version` in `profile.md`, which is the version at setup. If they differ, the assistant has been updated since setup; that is normal, but say so.
 
 ## Explain
 
@@ -41,7 +45,8 @@ Beyond PA support report, <date>
 Provider: <google | microsoft | none>
 Connectors: mail <ok|missing|error>, calendar <ok|missing|error>, files <ok|missing|error>
 Workspace: <ok|missing>, writable <yes|no|unknown>
-Setup: <complete <date> | partial | pending>, plugin <version at setup> / <version now>
+Plugin version: <plugin_version from this skill>
+Setup: <complete <date> | partial | pending>, set up on plugin <version from profile.md>
 Routines enabled: <list with schedules>
 Organizer last ran: <date or never>
 Rules: <approved|draft>, <n> rules, <n> VIPs, suggest mode <on until <date>|off>

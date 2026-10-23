@@ -5,6 +5,10 @@ description: Guided intake for asking Beyond Visions for a new feature, a change
 
 # Request
 
+plugin_version: 0.1.2
+
+The line above is the version of the assistant that is running right now. Every brief must carry it.
+
 Turn "I wish it could…" into a brief that support can act on first time. Ask one question at a time, accept short answers, and skip anything the person has already told you.
 
 ## Ground rules
@@ -43,6 +47,7 @@ Write the brief in this structure, in the person's language:
 
 ```
 Request from <name>, <company> — <date>
+Plugin version: <plugin_version from this skill>
 Type: <problem | change to <skill> | new feature>
 Summary: <one sentence>
 Today vs desired: <short paragraph>
