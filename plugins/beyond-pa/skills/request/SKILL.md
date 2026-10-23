@@ -5,7 +5,7 @@ description: Guided intake for asking Beyond Visions for a new feature, a change
 
 # Request
 
-plugin_version: 0.1.3
+plugin_version: 0.1.4
 
 The line above is the version of the assistant that is running right now. Every brief must carry it.
 

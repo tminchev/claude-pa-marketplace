@@ -1,5 +1,9 @@
 # What's new
 
+## 0.1.4
+
+- The inbox review always looks at the last 90 days and tells you how many messages it studied before proposing anything.
+
 ## 0.1.3
 
 - Setup goes straight from your writing voice into the inbox review; no task or contact questions up front.

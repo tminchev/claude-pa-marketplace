@@ -77,7 +77,7 @@ Write `preferences.md` and read back a short table of what is on, when, and how 
 
 3. Produce the **persona text** for *Settings → Profile preferences* using `assets/persona.md`, filled in. Explain: "Paste this into Settings → Profile, under what Claude should know about you. It helps every chat remember how to work with you."
 
-4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.3` to `profile.md`.
+4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.4` to `profile.md`.
 
 5. Run the `morning-brief` skill once, interactively, so they see what it looks like. Then close with four lines: what runs when; that they can keep a task list by saying "add a task" or "remind me" whenever they like (do not ask for tasks now); how to ask for things ("just tell me"); and how to get help ("say *I need support* or *I'd like to request something*").
 

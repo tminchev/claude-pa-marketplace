@@ -5,7 +5,7 @@ description: Checks that the personal assistant is set up correctly and produces
 
 # Support check
 
-plugin_version: 0.1.3
+plugin_version: 0.1.4
 
 The line above is the version of the assistant that is running right now. Report it exactly; do not guess it from memory.
 

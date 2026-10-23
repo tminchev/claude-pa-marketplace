@@ -23,7 +23,7 @@ The guiding rule: **predictable beats clever**. File by *who sent it*, never by 
 
 Say what you are about to do in two sentences and that nothing will move yet.
 
-1. **Sample.** Look at the last 60 to 90 days of mail: inbox plus archived/All Mail in Google mode, inbox plus subfolders in Microsoft mode. Work in pages; you do not need every message, you need the senders. Aim for the 300 to 1,000 most recent messages, enough that the top senders are stable.
+1. **Sample, and prove it.** The window is the last **90 days**, never less. Google mode: search `newer_than:90d` (inbox and archived mail, so do not add `in:inbox`), page through results until you have at least **300 messages** or the window is exhausted; aim for up to 1,000. Microsoft mode: search the Inbox and its subfolders for mail received in the last 90 days, paging the same way. Keep a running count. Before you propose anything, state the sample in one line: "I looked at N messages from the last 90 days, from M different senders." If N is under 300 and the window is not exhausted, you have not finished sampling; keep paging. Never infer VIPs or categories from a single day or a single page.
 
 2. **Group by sender and domain.** For each sender, note: count, whether it is automated (no-reply addresses, List-Unsubscribe header, "notification", "newsletter", "digest", "receipt", "invoice", "alert" patterns), whether the person ever replied to it, and whether it appears in their calendar as an attendee or in `people.md`.
 
