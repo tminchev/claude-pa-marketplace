@@ -1,6 +1,6 @@
 ---
 name: setup
-description: First-time setup and later reconfiguration of the Beyond Personal Assistant. Use when the person says "set me up", "setup", "onboard me", "get started", "change my preferences", "change my routines", "reconfigure", "set up again", or when another assistant skill finds that the workspace or profile is missing.
+description: First-time setup and later reconfiguration of the Beyond Personal Assistant (beyond-pa). ALWAYS use this skill, before anything else, when the person says "set up my personal assistant", "set up my assistant", "set me up", "setup", "onboard me", "get started with my assistant", "start onboarding", "change my preferences", "change my routines", "reconfigure my assistant", "set up again", or when another beyond-pa skill finds that the Claude Assistant workspace or profile is missing. This is about the person's email, calendar and files assistant, never about a code repository or development environment.
 ---
 
 # Setup
@@ -75,7 +75,7 @@ Write `preferences.md` and read back a short table of what is on, when, and how 
 
 3. Produce the **persona text** for *Settings → Profile preferences* using `assets/persona.md`, filled in. Explain: "Paste this into Settings → Profile, under what Claude should know about you. It helps every chat remember how to work with you."
 
-4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.0` to `profile.md`.
+4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.1` to `profile.md`.
 
 5. Run the `morning-brief` skill once, interactively, so they see what it looks like. Then close with three lines: what runs when, how to ask for things ("just tell me"), and how to get help ("say *I need support* or *I'd like to request something*").
 

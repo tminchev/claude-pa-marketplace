@@ -6,6 +6,6 @@ A personal assistant for your Claude account. It organises your inbox, briefs yo
 
 **To add it in Claude Code:** `/plugin install beyond-pa --marketplace tminchev/claude-pa-marketplace`
 
-**To start:** connect your email, calendar and files under **Customize → Connectors**, then say **"set me up"** in any chat.
+**To start:** connect your email, calendar and files under **Customize → Connectors**, then open a normal chat (not the Code tab) and say **"set up my personal assistant"**.
 
 **Support:** todor@beyondvisions.ai, or say "I need support" in a chat.
