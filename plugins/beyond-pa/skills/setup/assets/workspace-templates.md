@@ -69,6 +69,9 @@ cron: <expression>
 
 ## general
 tone: <from voice interview, one or two words>
+
+## Corrections
+<date, "the person's words", what changes from now on. One line each; refine a line rather than add a twin.>
 ```
 
 ## voice.md
@@ -99,7 +102,7 @@ approved_on: <date>
 last_updated: <date>
 
 ## Categories
-<one line per category: name — what belongs here. "Review" is always present.>
+<one line per category: name, then what belongs here. "Review" is always present.>
 
 ## VIPs (never filed, always stay in the inbox)
 <one per line: name <email>>
@@ -113,7 +116,7 @@ last_updated: <date>
 | <sender email, @domain, or "subject contains: ..."> | <category> |
 
 ## Corrections log
-<date — what was corrected — rule added or changed>
+<date, what was corrected, rule added or changed>
 ```
 
 ## tasks.md
@@ -133,8 +136,8 @@ last_updated: <date>
 # People
 
 ## VIP
-- <Name> <email> — <role / relationship> — <notes>
+- <Name> <email>, <role / relationship>, <notes>
 
 ## Regular
-- <Name> <email> — <role / relationship> — <notes>
+- <Name> <email>, <role / relationship>, <notes>
 ```

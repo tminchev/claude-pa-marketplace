@@ -1,5 +1,10 @@
 # What's new
 
+## 0.2.0
+
+- Clearer, more careful behaviour across every part of the assistant: it checks before it concludes, asks one thing at a time, never sends or moves anything without your say-so, and speaks plainly.
+- If you correct it, it writes the correction down and keeps to it.
+
 ## 0.1.4
 
 - The inbox review always looks at the last 90 days and tells you how many messages it studied before proposing anything.
