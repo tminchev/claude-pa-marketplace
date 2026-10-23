@@ -33,8 +33,7 @@ plugin_version: <version>
 
 ## inbox-organizer
 enabled: <yes | no>
-cadence: <e.g. every 2 hours, 07:00-19:00, working days>
-cron: <expression>
+cadence: <e.g. hourly on working days, or daily>
 suggest_mode: <on | off>
 suggest_mode_until: <date>
 max_items_per_run: 200
@@ -43,8 +42,7 @@ max_items_per_run: 200
 enabled: <yes | no>
 time: <HH:MM>
 days: <working days | every day>
-cron: <expression>
-delivery: <email | on request>
+delivery: <in the app | also by email>
 length: <short | standard | detailed>
 include: <list or none>
 exclude: <list or none>
@@ -52,20 +50,18 @@ exclude: <list or none>
 ## meeting-prep
 enabled: <yes | no>
 time: <HH:MM>
-cron: <expression>
 scope: <all | external only>
-delivery: <email | on request>
+delivery: <in the app | also by email>
 
 ## inbox-digest
 enabled: <yes | no>
 day: <weekday>
 time: <HH:MM>
-cron: <expression>
+delivery: <in the app | also by email>
 
 ## inbox-triage
 enabled: <yes | no>
 times: <e.g. 11:07 and 15:07>
-cron: <expression>
 
 ## general
 tone: <from voice interview, one or two words>

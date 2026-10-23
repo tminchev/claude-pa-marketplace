@@ -5,6 +5,8 @@
 #   2. exactly one core block, byte-identical to core/CORE.md
 #   3. file <= 200 lines
 #   4. no em dash (U+2014) or en dash (U+2013)
+#   5. folder name starts with pa- and equals the name field (no collisions with built-in skills)
+#   5. folder name starts with pa- and equals the name field (no collisions with built-in skills)
 # Exit 1 on any failure. Run from anywhere.
 set -uo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -79,6 +81,12 @@ def check_file(path, text):
         problems.append(f"{n} lines, over 200")
     if "—" in text or "–" in text:
         problems.append("contains an em or en dash")
+    nm = re.search(r"^name:[ \t]*(.+)$", fmt, flags=re.M)
+    folder = path.parent.name if hasattr(path, "parent") else None
+    if nm and folder and nm.group(1).strip() != folder:
+        problems.append(f"name '{nm.group(1).strip()}' does not match folder '{folder}'")
+    if folder and not folder.startswith("pa-"):
+        problems.append(f"folder '{folder}' lacks the pa- prefix")
     return problems
 
 for p in sorted(plugin.glob("skills/*/SKILL.md")):
@@ -88,7 +96,7 @@ for p in sorted(plugin.glob("skills/*/SKILL.md")):
 
 # negative controls: each must FAIL, or the gate is not checking anything
 block = f"{START}\n{core}\n{END}"
-good = f"---\nname: t\ndescription: >-\n  Does a thing when the person says \"go\".\n---\n\n# t\n\n{block}\n\nbody\n"
+good = f"---\nname: pa-t\ndescription: >-\n  Does a thing when the person says \"go\".\n---\n\n# t\n\n{block}\n\nbody\n"
 controls = {
     "truncated description": good.replace('description: >-\n  Does a thing when the person says "go".', 'description: Does a thing #tagged'),
     "key-colon description": good.replace('description: >-\n  Does a thing when the person says "go".', 'description: Use for STRUCTURAL work only: scaffolds'),
@@ -97,13 +105,16 @@ controls = {
     "over 200 lines": good + "\n".join(["x"] * 200) + "\n",
     "em dash": good.replace("body", "body — dash"),
 }
-if check_file("control-good", good):
-    fails.append(f"control: the good fixture was rejected: {check_file('control-good', good)}")
+class _P:
+    def __init__(self, n): self.parent = type("D", (), {"name": n})()
+if check_file(_P("pa-t"), good):
+    fails.append(f"control: the good fixture was rejected: {check_file(_P('pa-t'), good)}")
 for name, fixture in controls.items():
-    if not check_file("control", fixture):
+    holder = _P("t") if name == "missing pa- prefix" else _P("pa-t")
+    if not check_file(holder, fixture):
         fails.append(f"control: '{name}' fixture was accepted; the gate is broken")
 
 if fails:
     print("check-skills: FAIL"); [print("  " + f) for f in fails]; sys.exit(1)
-print(f"check-skills: OK ({len(list(plugin.glob('skills/*/SKILL.md')))} skills, 6 negative controls held)")
+print(f"check-skills: OK ({len(list(plugin.glob('skills/*/SKILL.md')))} skills, 7 negative controls held)")
 PY

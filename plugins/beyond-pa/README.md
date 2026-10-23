@@ -4,9 +4,9 @@ A personal assistant for your Claude account. It learns how your inbox works and
 
 **Works with** Gmail, Google Calendar and Google Drive, or Microsoft 365 (work or school accounts).
 
-**To start**, connect your email, calendar and files under Customize → Connectors, then open a normal chat (not the Code tab), use the plus button → Plugins to switch Beyond Personal Assistant on, then type a forward slash and pick setup. Setup takes about half an hour and nothing is moved or sent without your approval.
+**To start**, connect your email, calendar and files under Customize → Connectors, open Cowork, type a forward slash and pick pa-setup. Setup takes about half an hour and nothing is moved or sent without your approval. It proposes its own scheduled tasks for you to confirm, and results arrive as notifications in the app.
 
-**Skills**: setup, inbox-organizer, inbox-digest, morning-brief, inbox-triage, meeting-prep, draft-reply, capture, support, request.
+**Skills**: pa-setup, pa-inbox-organizer, pa-inbox-digest, pa-morning-brief, pa-inbox-triage, pa-meeting-prep, pa-draft-reply, pa-capture, pa-support, pa-request.
 
 **Your data** stays in a folder called Claude Assistant in your own Drive or OneDrive. The assistant never deletes mail, never marks spam, and never sends email to anyone but you unless you confirm it in the conversation.
 

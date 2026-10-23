@@ -1,5 +1,12 @@
 # What's new
 
+## 0.3.0
+
+- The assistant now lives in Cowork, on your phone, the web and the desktop app.
+- It sets up its own scheduled tasks for you to confirm with one tap; nothing to paste.
+- Results arrive as a notification in the app. Email is optional.
+- It asks in plain sentences; answer however you like.
+
 ## 0.2.0
 
 - Clearer, more careful behaviour across every part of the assistant: it checks before it concludes, asks one thing at a time, never sends or moves anything without your say-so, and speaks plainly.
