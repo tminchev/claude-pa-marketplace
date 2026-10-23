@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Inject plugins/beyond-pa/core/CORE.md into every skills/*/SKILL.md between the core markers.
+# Inject plugins/beyond-pa/core/rules.md into every skills/*/SKILL.md between the core markers.
 # Idempotent: running twice produces no diff. Run from anywhere.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PLUGIN="$ROOT/plugins/beyond-pa"
-CORE="$PLUGIN/core/CORE.md"
-[ -f "$CORE" ] || { echo "ERROR: $CORE missing" >&2; exit 1; }
-python3 - "$CORE" "$PLUGIN"/skills/*/SKILL.md <<'PY'
+RULES="$PLUGIN/core/rules.md"
+[ -f "$RULES" ] || { echo "ERROR: $RULES missing" >&2; exit 1; }
+python3 - "$RULES" "$PLUGIN"/skills/*/SKILL.md <<'PY'
 import sys, re, pathlib
 core = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8").rstrip("\n")
-START = "<!-- core:start (generated from core/CORE.md, do not edit here) -->"
+START = "<!-- core:start (generated from core/rules.md, do not edit here) -->"
 END = "<!-- core:end -->"
 block = f"{START}\n{core}\n{END}"
 changed = 0

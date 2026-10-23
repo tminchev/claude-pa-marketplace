@@ -10,4 +10,4 @@ A personal assistant for your Claude account. It learns how your inbox works and
 
 **Your data** stays in a folder called Claude Assistant in your own Drive or OneDrive. The assistant never deletes mail, never marks spam, and never sends email to anyone but you unless you confirm it in the conversation.
 
-**For maintainers:** the shared rules every skill follows live in `core/CORE.md` and are injected into each skill by `scripts/sync-core.sh`; `scripts/check-skills.sh` is the gate. Edit the rules there, never inside a skill's generated block.
+**For maintainers:** the shared rules every skill follows live in `core/rules.md` and are injected into each skill by `scripts/sync-core.sh`; `scripts/check-skills.sh` is the gate. Edit the rules there, never inside a skill's generated block.

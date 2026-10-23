@@ -2,7 +2,7 @@
 # Conformance gate for plugins/beyond-pa/skills/*/SKILL.md. Four checks, each with a negative control.
 #   1. description strict-parses as YAML to the same text as the raw file, and is <= 1024 chars
 #      (an unquoted '#' or 'key: value' silently truncates a description and the skill never fires)
-#   2. exactly one core block, byte-identical to core/CORE.md
+#   2. exactly one core block, byte-identical to core/rules.md
 #   3. file <= 200 lines
 #   4. no em dash (U+2014) or en dash (U+2013)
 #   5. folder name starts with pa- and equals the name field (no collisions with built-in skills)
@@ -14,8 +14,8 @@ PLUGIN="$ROOT/plugins/beyond-pa"
 python3 - "$PLUGIN" <<'PY'
 import sys, re, pathlib, tempfile, os
 plugin = pathlib.Path(sys.argv[1])
-core = (plugin / "core" / "CORE.md").read_text(encoding="utf-8").rstrip("\n")
-START = "<!-- core:start (generated from core/CORE.md, do not edit here) -->"
+core = (plugin / "core" / "rules.md").read_text(encoding="utf-8").rstrip("\n")
+START = "<!-- core:start (generated from core/rules.md, do not edit here) -->"
 END = "<!-- core:end -->"
 fails = []
 
@@ -75,7 +75,7 @@ def check_file(path, text):
     else:
         inner = text.split(START, 1)[1].split(END, 1)[0].strip("\n")
         if inner != core:
-            problems.append("core block differs from core/CORE.md (run scripts/sync-core.sh)")
+            problems.append("core block differs from core/rules.md (run scripts/sync-core.sh)")
     n = text.count("\n") + (0 if text.endswith("\n") else 1)
     if n > 200:
         problems.append(f"{n} lines, over 200")
