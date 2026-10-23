@@ -1,5 +1,9 @@
 # What's new
 
+## 0.3.2
+
+- Results arrive in the app only. The assistant never sends email on its own.
+
 ## 0.3.1
 
 - Setup no longer asks for an email address up front; it only comes up if you choose email for a routine.

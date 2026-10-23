@@ -14,7 +14,6 @@ company: <company>
 timezone: <IANA zone, e.g. Europe/London>
 working_days: <e.g. Mon-Fri>
 working_hours: <e.g. 09:00-18:00>
-delivery_email: <address briefs are sent to>
 language: <e.g. English>
 provider: <google | microsoft>
 workspace_writable: <yes | no>
@@ -42,7 +41,6 @@ max_items_per_run: 200
 enabled: <yes | no>
 time: <HH:MM>
 days: <working days | every day>
-delivery: <in the app | also by email>
 length: <short | standard | detailed>
 include: <list or none>
 exclude: <list or none>
@@ -51,13 +49,11 @@ exclude: <list or none>
 enabled: <yes | no>
 time: <HH:MM>
 scope: <all | external only>
-delivery: <in the app | also by email>
 
 ## inbox-digest
 enabled: <yes | no>
 day: <weekday>
 time: <HH:MM>
-delivery: <in the app | also by email>
 
 ## inbox-triage
 enabled: <yes | no>
