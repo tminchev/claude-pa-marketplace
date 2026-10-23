@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.5
+
+- Wording: once you say yes to a routine, the assistant creates its scheduled task for it itself.
+
+
 ## 0.3.4
 
 - Setup now creates your scheduled tasks itself and reads them back, at exactly the times you chose. It no longer guesses your role, keeps its closing short, leaves your other scheduled tasks alone, and tells you how to tidy older mail after the first week.

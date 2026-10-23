@@ -132,7 +132,7 @@ Then say, in one sentence: "If I ever get something wrong, tell me and I'll writ
 
 3. Optional: produce the **persona text** from `assets/persona.md` and say: "If you also use Claude outside Cowork, paste this into Settings → Profile so those chats know about me too. You can skip it."
 
-4. Update `profile.md` in place with `setup_complete: <today's date>` and `plugin_version: 0.3.4`; never create a copy or move the old file.
+4. Update `profile.md` in place with `setup_complete: <today's date>` and `plugin_version: 0.3.5`; never create a copy or move the old file.
 
 5. Run the `pa-morning-brief` skill once, here, so they see what a brief looks like. Then close with five lines, under 90 words in all, and nothing else: what runs when and that it arrives as a notification; that the older mail in the inbox is untouched until they say "clean up my backlog" after the first week; that they can keep a task list by saying "add a task" or "remind me" whenever they like (do not ask for tasks now); how to ask for things ("just tell me"); and how to get help ("say *I need support* or *I'd like to request something*"). No words like permission, task, tool or plugin: they run on their own.
 
