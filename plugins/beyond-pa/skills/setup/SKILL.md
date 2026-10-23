@@ -17,6 +17,8 @@ If the person asks only to change preferences or routines, skip to Part C. If th
 
 **Workspace.** A folder named `Claude Assistant` in the person's Google Drive or OneDrive. It holds `profile.md`, `preferences.md`, `voice.md`, `inbox-rules.md`, `tasks.md`, `people.md`, and two subfolders `notes` and `journal`. You create it in Part A. Every other skill reads from it.
 
+**Choices.** Normal chat has no buttons. Whenever you offer options, number them and say "reply with a number", so the person can answer 1, 2, or "1 and 3". Keep lists to five or fewer.
+
 **Never** send email, move mail, create events or share files during setup unless the person explicitly says yes to that specific action. Setup never deletes anything.
 
 ## Part A: profile and workspace
@@ -29,11 +31,11 @@ If the person asks only to change preferences or routines, skip to Part C. If th
 
 4. **Voice.** Say you will learn how they write so drafts sound like them. Ask them to forward themselves, or point you to, two or three emails they wrote and are happy with; in Google or Microsoft mode you can also search their Sent mail for recent messages longer than four sentences, with their permission. From those, note greeting style, sign-off, sentence length, formality, phrases they use, and anything they avoid. Ask two direct questions: "How do you want to sound in replies, in one or two words?" and "Anything you never want me to write?" Write `voice.md` and read back a three-line summary for approval.
 
-5. **First priorities.** Ask: "What are the three things on your plate right now that matter most?" Write them to `tasks.md` as open tasks. Ask: "Who are the five to ten people you deal with most, and who are the ones whose email must always reach you?" Write them to `people.md` and mark VIPs.
+After the voice summary is approved, go straight to Part B. Do not ask about tasks or contacts here; the inbox audit finds the people they deal with and asks about them with evidence.
 
 ## Part B: inbox audit
 
-Say: "Next I'd like to understand your inbox so I can keep it tidy. I'll look at the last two to three months, show you what I find, and we'll agree together what goes where. I won't move anything until you approve the plan." Then follow the `inbox-organizer` skill, phases 1 and 2, exactly. Come back here when `inbox-rules.md` is approved. If the person wants to skip this for now, write `inbox_audit: skipped` in `profile.md` and continue.
+Say: "Now I'll look at your inbox: the last two to three months, who writes to you, what is noise and what is real. I'll show you what I find and we'll agree together what goes where. Nothing moves until you approve the plan." Then start immediately; do not ask any more questions before showing findings. Then follow the `inbox-organizer` skill, phases 1 and 2, exactly. The audit proposes VIPs from the people the person actually replies to and meets; confirm them there and write them to `people.md`. Come back here when `inbox-rules.md` is approved. If the person wants to skip this for now, write `inbox_audit: skipped` in `profile.md` and continue.
 
 ## Part C: routines
 
@@ -75,9 +77,9 @@ Write `preferences.md` and read back a short table of what is on, when, and how 
 
 3. Produce the **persona text** for *Settings → Profile preferences* using `assets/persona.md`, filled in. Explain: "Paste this into Settings → Profile, under what Claude should know about you. It helps every chat remember how to work with you."
 
-4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.2` to `profile.md`.
+4. Write `setup_complete: <today's date>` and `plugin_version: 0.1.3` to `profile.md`.
 
-5. Run the `morning-brief` skill once, interactively, so they see what it looks like. Then close with three lines: what runs when, how to ask for things ("just tell me"), and how to get help ("say *I need support* or *I'd like to request something*").
+5. Run the `morning-brief` skill once, interactively, so they see what it looks like. Then close with four lines: what runs when; that they can keep a task list by saying "add a task" or "remind me" whenever they like (do not ask for tasks now); how to ask for things ("just tell me"); and how to get help ("say *I need support* or *I'd like to request something*").
 
 ## If something goes wrong
 

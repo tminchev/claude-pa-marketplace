@@ -23,7 +23,7 @@ Once a week, show the person what the inbox organizer did, surface anything unce
 2. **Review items.** List what is currently in the Review label or folder, grouped by sender, with count and a one-line reason you could not place it (no matching rule, new sender, looks like a real conversation). Cap at 25 groups; say how many more there are.
 3. **Suggestions.** For each Review group with three or more messages, propose a category in one line, phrased as a question: "Receipts from parcelco.com (6): file under Shop receipts?"
 4. **Suggest mode check.** If `suggest_mode: on` and `suggest_mode_until` has passed, ask: "The first week is over. Shall I start moving filed mail out of your inbox from now on?"
-5. **Numbered questions.** End with a numbered list of every question asked, so the person can reply "1 yes, 2 no, 3 Newsletters".
+5. **Numbered questions.** (Normal chat has no buttons, so numbering is how the person answers quickly.) End with a numbered list of every question asked, so the person can reply "1 yes, 2 no, 3 Newsletters".
 
 ## Unattended output
 

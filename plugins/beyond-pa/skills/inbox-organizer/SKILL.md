@@ -32,7 +32,7 @@ Say what you are about to do in two sentences and that nothing will move yet.
 4. **Present the proposal**, grouped by proposed category, with the top senders and counts in each, and a one-line reason. Mark groups where you are unsure with a question mark. Then ask, one group at a time, starting with the uncertain ones:
    - "Does this group belong together, and is the name right?"
    - For any sender with replies from the person: "This looks like a real conversation. Should it stay in your inbox or be filed?"
-   - "Who are the people whose mail must always stay in your inbox, no matter what?" Add them to VIPs, together with VIPs already in `people.md`.
+   - **VIPs from evidence, not from memory.** List the people the person replied to most and the calendar attendees they meet most, as a numbered list with a one-line reason each ("replied 14 times", "3 meetings this month"). Ask: "Which of these must always reach you? Reply with numbers, and add anyone I missed." Write the confirmed set to `people.md` under VIP, with the others under Regular.
    - "Is there anything I must never touch? For example a folder you manage yourself, or mail from a particular system." Add to never-touch.
    - "Anything that should be filed by subject rather than sender?" Accept only clear patterns such as an invoice number prefix or a project code.
 
@@ -67,4 +67,4 @@ Later runs the same day append to the same journal file.
 
 ## Output style
 
-Interactive: short paragraphs, counts in a compact list, one question at a time. Never show raw message IDs or tool output. Unattended: silent except the journal and the error email.
+Interactive: short paragraphs, counts in a compact list, one question at a time. Normal chat has no buttons: when offering options, number them and ask for a number, so the person can answer "2" or "1 and 3". Never show raw message IDs or tool output. Unattended: silent except the journal and the error email.

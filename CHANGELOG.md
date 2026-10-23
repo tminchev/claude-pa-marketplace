@@ -1,5 +1,11 @@
 # What's new
 
+## 0.1.3
+
+- Setup goes straight from your writing voice into the inbox review; no task or contact questions up front.
+- Your key contacts are suggested from who you actually write to and meet, for you to confirm.
+- Questions with options are numbered so you can answer with a single number.
+
 ## 0.1.2
 
 - Internal: checks that updates reach your account automatically.
