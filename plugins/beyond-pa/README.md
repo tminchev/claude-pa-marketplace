@@ -4,7 +4,7 @@ A personal assistant for your Claude account. It learns how your inbox works and
 
 **Works with** Gmail, Google Calendar and Google Drive, or Microsoft 365 (work or school accounts).
 
-**To start**, connect your email, calendar and files under Customize → Connectors, then open a normal chat (not the Code tab), type a forward slash, and pick setup from Beyond Personal Assistant. Setup takes about half an hour and nothing is moved or sent without your approval.
+**To start**, connect your email, calendar and files under Customize → Connectors, then open a normal chat (not the Code tab), use the plus button → Plugins to switch Beyond Personal Assistant on, then type a forward slash and pick setup. Setup takes about half an hour and nothing is moved or sent without your approval.
 
 **Skills**: setup, inbox-organizer, inbox-digest, morning-brief, inbox-triage, meeting-prep, draft-reply, capture, support, request.
 
