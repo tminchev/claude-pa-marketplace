@@ -1,5 +1,9 @@
 # What's new
 
+## 0.3.1
+
+- Setup no longer asks for an email address up front; it only comes up if you choose email for a routine.
+
 ## 0.3.0
 
 - The assistant now lives in Cowork, on your phone, the web and the desktop app.

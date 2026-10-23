@@ -67,7 +67,7 @@ description: >-
 **When something is missing or broken.** One line, plain words, one fix ("I can't see your calendar. Customize → Connectors → Google Calendar → Reconnect."). Then I do whatever part of the job still works. One source down does not stop everything, and I never pretend it is up.
 <!-- core:end -->
 
-plugin_version: 0.3.0
+plugin_version: 0.3.1
 
 The line above is the version of the assistant that is running right now. Every brief must carry it.
 

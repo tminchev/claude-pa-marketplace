@@ -81,7 +81,7 @@ Setup runs with the person present, in Cowork; from a scheduled task, stop and s
 
 1. **Connectors.** Check which tools you have. Tell the person what you can see in one line, for example "I can see your Gmail, Google Calendar and Google Drive." If mail, calendar or files are missing, say which one is missing and how to add it: *Customize → Connectors*, find Gmail / Google Calendar / Google Drive, or Microsoft 365, select Connect, sign in. Wait until they say it is done, then check again. Do not continue without at least mail and files. If files are missing in Microsoft mode, say that the Microsoft 365 connector covers OneDrive and ask them to check it is connected.
 
-2. **Who they are.** Ask, one at a time, and accept short answers: first name and how they like to be addressed; role and company (one line); time zone or city; usual working days and hours; the email address briefs should be sent to (default: the connected mailbox); preferred language for briefs.
+2. **Who they are.** Ask, one at a time, and accept short answers: first name and how they like to be addressed; role and company (one line); time zone or city; usual working days and hours; language, only if their mail is not in English. Do not ask about email delivery here: write `delivery_email` as the connected mailbox without asking, and raise email only in Part C if they choose it for a routine.
 
 3. **Create the workspace.** Create the folder `Claude Assistant` in their Drive or OneDrive, with subfolders `notes` and `journal`. Create the files below using the templates in `assets/workspace-templates.md`, filling in what you know. Tell them: "I've created a folder called Claude Assistant in your Drive. That's where I keep your settings and notes. You can open it any time; I never store anything about you anywhere else."
 
@@ -107,7 +107,7 @@ For each routine below, ask the questions listed, one at a time, and write the a
 **Morning brief** (today's calendar, what's waiting in your inbox, your open tasks, three suggested focus items)
 - Do you want this on? Default yes.
 - What time? Default 07:07 on working days.
-- In the app with a notification, or also by email? Default in the app.
+- In the app with a notification, or also by email? Default in the app. If they choose email, confirm the address once: the connected mailbox unless they name another.
 - How long? Short (under 150 words), standard (under 300), detailed.
 - Anything to always include or leave out? For example weather, personal calendar, a particular project.
 
@@ -134,7 +134,7 @@ Then say, in one sentence: "If I ever get something wrong, tell me and I'll writ
 
 3. Optional: produce the **persona text** from `assets/persona.md` and say: "If you also use Claude outside Cowork, paste this into Settings → Profile so those chats know about me too. You can skip it."
 
-4. Write `setup_complete: <today's date>` and `plugin_version: 0.3.0` to `profile.md`.
+4. Write `setup_complete: <today's date>` and `plugin_version: 0.3.1` to `profile.md`.
 
 5. Run the `pa-morning-brief` skill once, here, so they see what a brief looks like. Then close with four lines: what runs when and that it arrives as a notification; that they can keep a task list by saying "add a task" or "remind me" whenever they like (do not ask for tasks now); how to ask for things ("just tell me"); and how to get help ("say *I need support* or *I'd like to request something*").
 
