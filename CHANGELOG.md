@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.4
+
+- Setup now creates your scheduled tasks itself and reads them back, at exactly the times you chose. It no longer guesses your role, keeps its closing short, leaves your other scheduled tasks alone, and tells you how to tidy older mail after the first week.
+
+
 ## 0.3.3
 
 - The assistant only writes drafts and never sends email, and it tells you so during setup. Requests to support are prepared as a draft for you to send.

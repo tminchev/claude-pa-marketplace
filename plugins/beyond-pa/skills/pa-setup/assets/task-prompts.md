@@ -1,6 +1,6 @@
 # Scheduled task templates
 
-Propose one scheduled task per routine that is switched on, from the conversation, for the person to confirm. Replace every `{{placeholder}}` from profile.md and preferences.md. Give the schedule in plain words (Cowork offers hourly, daily, weekdays, weekly). Each prompt stands on its own: a scheduled run starts with no memory of this conversation.
+Create one scheduled task per routine that is switched on, from the conversation, after the person said yes to it in Part C. Replace every `{{placeholder}}` from profile.md and preferences.md. Schedule it at exactly the time and days they chose, in their time zone; never move it a few minutes earlier or later. Phone notification on for every task except the organiser. Each prompt stands on its own: a scheduled run starts with no memory of this conversation.
 
 Every prompt ends with the same delivery rule, because the run's final message is what the person reads on their phone.
 
