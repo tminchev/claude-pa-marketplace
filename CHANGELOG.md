@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.7
+
+- The brief and triage now cover everything still waiting in your inbox, not just new mail. Every run saves what it said to your journal folder. Filing starts as soon as you approve the plan; labels only is a choice you can make during setup.
+
+
 ## 0.3.6
 
 - Setup no longer offers a paragraph to paste into your Claude profile; Cowork knows about the assistant on its own.

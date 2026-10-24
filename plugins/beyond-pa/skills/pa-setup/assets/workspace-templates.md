@@ -33,8 +33,7 @@ plugin_version: <version>
 ## inbox-organizer
 enabled: <yes | no>
 cadence: <e.g. hourly on working days, or daily>
-suggest_mode: <on | off>
-suggest_mode_until: <date>
+suggest_mode: <off | on>
 max_items_per_run: 200
 
 ## morning-brief
