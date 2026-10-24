@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.6
+
+- Setup no longer offers a paragraph to paste into your Claude profile; Cowork knows about the assistant on its own.
+
+
 ## 0.3.5
 
 - Wording: once you say yes to a routine, the assistant creates its scheduled task for it itself.

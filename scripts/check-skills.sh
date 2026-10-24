@@ -20,7 +20,7 @@ core = (plugin / "core" / "rules.md").read_text(encoding="utf-8").rstrip("\n")
 START = "<!-- core:start (generated from core/rules.md, do not edit here) -->"
 END = "<!-- core:end -->"
 fails = []
-RETIRED = ["delivery_email", "by email", "cron", "Code tab", "reply with a number", "/schedule", "or send?", "sends only on", "send one email", "without explicit confirmation", "tap Schedule", "one tap", "tap to confirm"]
+RETIRED = ["delivery_email", "by email", "cron", "Code tab", "reply with a number", "/schedule", "or send?", "sends only on", "send one email", "without explicit confirmation", "tap Schedule", "one tap", "tap to confirm", "persona.md", "persona text"]
 
 def yaml_scalar(fm_text):
     """Return the description as a strict YAML parser would read it. Supports plain scalars,
