@@ -1,5 +1,10 @@
 # What's new
 
+## 0.3.8
+
+- The brief and triage now set older open conversations aside as 'decide or archive' and never draft replies to them. Replies are never drafted twice on one thread. Meeting prep notes invites you have not accepted and shows local time when you travel. Your settings folder keeps earlier versions in an archive folder, and anything you ask a routine to always do is kept across updates.
+
+
 ## 0.3.7
 
 - The brief and triage now cover everything still waiting in your inbox, not just new mail. Every run saves what it said to your journal folder. Filing starts as soon as you approve the plan; labels only is a choice you can make during setup.

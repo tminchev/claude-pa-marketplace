@@ -8,6 +8,7 @@ Create each file in the `Claude Assistant` folder. Replace values in angle brack
 # Profile
 
 name: <first name>
+email: <the connected mailbox address, as the connector reports it>
 address_as: <how they like to be addressed>
 role: <role>
 company: <company>
@@ -15,6 +16,7 @@ timezone: <IANA zone, e.g. Europe/London>
 working_days: <e.g. Mon-Fri>
 working_hours: <e.g. 09:00-18:00>
 language: <e.g. English>
+other_addresses: <the person's other mailboxes that forward here, or none>
 provider: <google | microsoft>
 workspace_writable: <yes | no>
 inbox_audit: <done | skipped | pending>
@@ -35,6 +37,7 @@ enabled: <yes | no>
 cadence: <e.g. hourly on working days, or daily>
 suggest_mode: <off | on>
 max_items_per_run: 200
+extra: <none, or lasting instructions the person added later>
 
 ## morning-brief
 enabled: <yes | no>
@@ -43,20 +46,24 @@ days: <working days | every day>
 length: <short | standard | detailed>
 include: <list or none>
 exclude: <list or none>
+extra: <none, or lasting instructions the person added later>
 
 ## meeting-prep
 enabled: <yes | no>
 time: <HH:MM>
 scope: <all | external only>
+extra: <none, or lasting instructions the person added later>
 
 ## inbox-digest
 enabled: <yes | no>
 day: <weekday>
 time: <HH:MM>
+extra: <none, or lasting instructions the person added later>
 
 ## inbox-triage
 enabled: <yes | no>
 times: <e.g. 11:07 and 15:07>
+extra: <none, or lasting instructions the person added later>
 
 ## general
 tone: <from voice interview, one or two words>
